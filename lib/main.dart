@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_lesson/second_screen.dart';
 
 void main() {
+  registered1(name: "Jupiter1", speed: 954762);
+  registered2(name: "Jupiter2", speed: 954762).toPrint;
+  List<Car> carList = registered3(names: ["Jupiter3.1", "Jupiter3.2", "Jupiter3.3"], speed: [1, 3]);
+  for (Car car in carList) {
+    car.toPrint();
+  }
   runApp(const MyApp());
 }
 
